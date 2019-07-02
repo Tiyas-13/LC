@@ -30,6 +30,8 @@
 	<script type="text/javascript" src="{% static 'js/magnific-popup.js' %}"></script>
 	<script src="{% static 'contactform/contactform.js' %}"></script>
 
+
+
 	<!-- =======================================================
     Theme Name: Knight
     Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -49,10 +51,23 @@
             {{ message }}
             {% endfor %}
           {% endif %}
-        </div>
+</div>
+
+        
+     <script type="text/javascript" src="{% static 'js/jquery.1.8.3.min.js' %}"></script><script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/magnific-popup.js' %}"></script>
+	<script src="{% static 'contactform/contactform.js' %}"></script>
+           
         
 	<header class="header" id="header">
 		<!--header-start-->
+		<br>
+		<br>
 		<div class="container">
 			<figure class="logo animated fadeInDown delay-07s">
 				<a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
@@ -213,26 +228,37 @@
 
 		</div>
 		<div class="portfolioContainer wow fadeInUp delay-04s">
+			
 			<div class=" Portfolio-box printdesign">
+				
 				<h3>Committee 1</h3>
 				<h5>United Nations General Assembly - DISEC</h5>
 				<a href="{% static 'img/Portfolio-pic1.jpg' %}"><img src="{% static 'img/Portfolio-pic1.jpg' %}" alt=""></a>
-				<a class="button" href="#">Study Guide</a><br><br><br>
+				<a class = "button">Study Guide</a><br><br><br>
 				<a class="button" href="#">Portfolio Matrix</a><br>
+
 			</div>
+				
+
+
 			<div class="Portfolio-box webdesign">
 				<h3>Committee 2</h3>
 				<h5>The All India Oppostion Meet</h5>
 				<a href="{% static 'img/Portfolio-pic2.jpg' %}"><img src="{% static 'img/Portfolio-pic2.jpg' %}" alt=""></a>
-				<a class="button" href="#">Study Guide</a><br><br><br>
+				<a class = "button">Study Guide</a><br><br><br>
 				<a class="button" href="#">Portfolio Matrix</a><br>
 			</div>
+
 			<div class=" Portfolio-box branding">
 				<h3>Committee 3</h3>
 				<h5>International Press</h5>
 				<a href="{% static 'img/Portfolio-pic3.jpg' %}"><img src="{% static 'img/Portfolio-pic3.jpg' %}" alt=""></a>
 				<a class="button" href="#">IP Rulebook</a><br>
 			</div>
+
+			
+		
+
 		<!--	<div class=" Portfolio-box photography">
 				<a href="img/Portfolio-pic4.jpg"><img src="img/Portfolio-pic4.jpg" alt=""></a>
 				<h3>Vinyl Record</h3>
@@ -295,12 +321,51 @@
 			<br>
 			<br>
 			<br>
-			{% block content %} {% endblock %}
+			<div class="form-row wow fadeInUp delay-04s">
+      <div>
+      	<div class = "container">
+      	<div class="form-row">
+      		<div class="col-md-4">
+      			<div class ="text-center">
+        <h3>
+				<a class ="button" href="{% url 'register' %}">Register as Delegate</a>
+			</h3>
+		</div>
+      </div>
+      <div class="hidden-lg hidden-mg">
+      	<br>
+      	<br>
+      	<br>
+      </div>
+      <div class="col-md-4">
+      	<div class ="text-center">
+        <h3>
+				<a class="button" href="{% url 'register2' %}">Register as IP</a>
+			</h3>
+		</div>
+     </div>
+     <div class="hidden-lg hidden-mg">
+      	<br>
+      	<br>
+      	<br>
+      </div>
+     <div class="col-md-4">
+     	<div class ="text-center">
+        <h3>
+				<a class = "button" href="https://docs.google.com/forms/d/1EmYkvblXTD1PKwEUE0PRnFan4DGVa3HXkbM3CV5EogQ/edit">Apply as EB</a>
+			</h3>
+		</div>
+		</div>
+     </div>
+    </div>
+
 			
 		</div>
 	</section>
 
-
+<br>
+<br>
+<br>
 
 		<section class="main-section" id="schedule">
 		<!--main-section-start-->
@@ -925,6 +990,27 @@
 
 		});
 	</script>
+
+	<!-- Video Player JavaScript -->
+	<script type="text/javascript">
+	 $("#vidlist a").click(function(){
+		 var link=$(this).children("p").text();
+		 $("#ytp iframe").attr("src",link);
+		 // $("#ytp iframe").attr('src', $("#ytp iframe", parent).attr('src') + '?autoplay=1');
+	 })
+	</script>
+ <script>
+	var i = 0;
+	var txt = 'The Literary Circle Presents:'; /* The text */
+	var speed = 50; /* The speed/duration of the effect in milliseconds */
+	function typeWriter() {
+	  if (i < txt.length) {
+	    document.getElementById("demo").innerHTML += txt.charAt(i);
+	    i++;
+	    setTimeout(typeWriter, speed);
+	  }
+	}
+ <script>
 
 </body>
 

@@ -260,7 +260,7 @@ h5{
 .header{
 	text-align:center;
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
-	padding:280px 0;
+	padding:2px 0;
 }
 .logo{
 	width:400px;
@@ -529,9 +529,13 @@ color: #c7af8b;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
+
 .Portfolio-box img:hover {
 	opacity: 0.6;
 }
+
+ .button {
+  }
 
 .Portfolio-nav li a.current{
 	background:#c79a56;

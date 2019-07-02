@@ -19,6 +19,7 @@ from MUN import views as v
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', v.base),
-    path('',v.contact, name = 'register'),
+    path('', v.base, name = 'home'),
+    path('committee/',v.committee, name = 'register'),
+    path('ip/',v.ip, name = 'register2'),
 ]

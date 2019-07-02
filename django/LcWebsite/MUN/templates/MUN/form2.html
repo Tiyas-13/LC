@@ -1,7 +1,5 @@
-<!--% extends "MUN/base.html" %}
-{% block content %}-->
-{% load crispy_forms_tags %}
 {% load staticfiles %}
+{% load crispy_forms_tags %}
 <!doctype html>
 <html>
 
@@ -39,21 +37,18 @@
 <section class="main-section paddind" id="Portfolio">
     <!--main-section-start-->
     <div class="container">
-      <h2>Register as Delegate</h2>
+      <h2>Register as International Press</h2>
       <h6></h6>
 	<form method="POST">
 		{% csrf_token %}
-		<!--<fieldset class ="form-group">
-			<!--<legend class="border-bottom mb-4">Join Today</legend> -->
-			<!--{{ form|crispy }}
-		</fieldset>-->
+		
 
 		<div class="form-row wow fadeInUp delay-04s">
       <div class="form-group col-md-6">
-        {{ form.name|as_crispy_field }}
+        {{ form2.name|as_crispy_field }}
       </div>
       <div class="form-group col-md-6 mb-0">
-        {{ form.number|as_crispy_field }}
+        {{ form2.number|as_crispy_field }}
      </div>
     </div>
     
@@ -61,36 +56,36 @@
 
     <div class="form-row wow fadeInUp delay-04s">
       <div class="form-group col-md-6 mb-0">
-        {{ form.email|as_crispy_field }}
+        {{ form2.email|as_crispy_field }}
       </div>
       <div class="form-group col-md-6 mb-0">
-        {{ form.college|as_crispy_field }}
+        {{ form2.college|as_crispy_field }}
       </div>
     </div>
 
 
 <div class="form-row wow fadeInUp delay-04s">
   <div class="form-group col-md-12 mb-0">
-{{ form.committee|as_crispy_field }} 
+{{ form2.Choice|as_crispy_field }} 
 </div>
 </div>
 
 <div class="form-row wow fadeInUp delay-04s">
   <div class="form-group col-md-4 mb-0">
-{{ form.preference1|as_crispy_field }} 
+{{ form2.preference1|as_crispy_field }} 
 </div>
 <div class="form-group col-md-4 mb-0">
-{{ form.preference2|as_crispy_field }} 
+{{ form2.preference2|as_crispy_field }} 
 </div>
 <div class="form-group col-md-4 mb-0">
-{{ form.preference3|as_crispy_field }} 
+{{ form2.preference3|as_crispy_field }} 
 </div>
 </div>
 
 
     <div class="form-row wow fadeInUp delay-04s">
       <div class="form-group col-md-12 mb-0">
-    {{ form.Past_Experience|as_crispy_field }}
+    {{ form2.Past_Experience|as_crispy_field }}
   </div>
 </div>
 
@@ -113,5 +108,3 @@
 	
   </body>
   </html>
-
-<!--{% endblock content %}-->
