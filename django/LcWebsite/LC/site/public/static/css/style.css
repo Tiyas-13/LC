@@ -513,7 +513,7 @@ color: #c7af8b;
   padding-bottom: 10px;
 }
 
-.Portfolio-box{
+.Portfolio-boxx{
 	text-align:center;
 	margin-bottom:30px;
 	height:450px;
@@ -522,7 +522,7 @@ color: #c7af8b;
 	float:left;
 	padding-bottom: :10px;
 }
-.Portfolio-box img{
+.Portfolio-boxx img{
 	margin-bottom:25px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -530,7 +530,7 @@ color: #c7af8b;
 }
 
 
-.Portfolio-box img:hover {
+.Portfolio-boxx img:hover {
 	opacity: 0.6;
 }
 
